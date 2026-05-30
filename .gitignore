@@ -1,0 +1,23 @@
+# Lazy.nvim auto-generated
+plugin/
+.tests/
+.repro/
+
+# Logs
+*.log
+
+# Local-only state (should never be committed)
+data/
+
+# Backup files
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

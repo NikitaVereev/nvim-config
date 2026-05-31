@@ -46,6 +46,7 @@ return {
     },
 
     lazygit      = { enabled = true },
+    terminal     = { enabled = true },
     scroll       = { enabled = false },
     statuscolumn = { enabled = false },
   },
@@ -86,6 +87,11 @@ return {
     -- Notifications
     { "<leader>n",       function() Snacks.notifier.show_history() end,                                            desc = "Notifications history" },
     { "<leader>un",      function() Snacks.notifier.hide() end,                                                    desc = "Dismiss notifications" },
+
+    -- Floating terminal (toggle from anywhere, including INSIDE the terminal).
+    -- <C-/> is the canonical binding; some terminals send <C-_> for the same chord — bind both.
+    { "<C-/>", function() Snacks.terminal() end, mode = { "n", "t" }, desc = "Toggle terminal" },
+    { "<C-_>", function() Snacks.terminal() end, mode = { "n", "t" }, desc = "Toggle terminal" },
   },
 
   init = function()

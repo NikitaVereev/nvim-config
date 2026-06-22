@@ -66,7 +66,7 @@ LSP-серверы, форматтеры, линтеры **ставятся ав
 
 ```bash
 # 1. Системные deps
-brew install neovim tmux git ripgrep fd lazygit tree-sitter zoxide
+brew install neovim tmux git ripgrep fd lazygit tree-sitter-cli zoxide
 
 # 2. Nerd Font
 brew install --cask font-jetbrains-mono-nerd-font
